@@ -1,6 +1,6 @@
 /*** @param {NS} ns**/
 export async function main(ns) {
-    let target = "n00dles";
+    let target = ns.getHostname();
     let minSecurity = ns.getServerMinSecurityLevel(target);
     let growThresh = ns.getServerMaxMoney(target) * 0.8;
 
