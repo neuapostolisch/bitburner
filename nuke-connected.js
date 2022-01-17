@@ -5,7 +5,6 @@ export async function main(ns) {
 		let val = connected.pop();
 		if (ns.getServerNumPortsRequired(val) == 0) {
 			await ns.nuke(val);
-			await ns.installBackdoor(val);
 		}
 	}
 }
